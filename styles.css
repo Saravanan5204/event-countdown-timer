@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.time-input {
+    margin-bottom: 20px;
+}
+
+input[type="datetime-local"] {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button.stop-button {
+    background-color: #dc3545; /* Red color */
+    color: #fff;
+    margin-left: 10px;
+}
+
+button.stop-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.countdown-element {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown-element span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.countdown-element p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
